@@ -1,0 +1,1 @@
+Tentei fazer um coração usando o cout e as nomenclaturas para pular linha (endl e \n)
