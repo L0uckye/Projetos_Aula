@@ -1,0 +1,27 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    float moeda;
+    float cambioUSD, cambioEUR, cambioGBP;
+    float result=0;
+    cout << "Insira a quantia em reais(BRL)";
+    cin >> moeda;
+    cout << "Informe a taxa da câmbio para dollar(USD)";
+    cin >> cambioUSD;
+    cout << "Informe a taxa de câmbio para euro(EUR)";
+    cin >> cambioEUR;
+    cout << "Informe a taxa de câmbio para Libra esterlina(GBP)";
+    cin >> cambioGBP;
+    cout << fixed << setprecision(3);
+    result = moeda * 1/cambioUSD;
+    cout <<"Esta quantia em reais equivale a " << result << "USD" << endl;
+    result = 0;
+    result = moeda * 1/cambioEUR;
+    cout <<"Esta quantia em reais equivale a " << result << "EUR" << endl;
+    result = 0;
+    result = moeda * 1/cambioGBP;
+    cout <<"Esta quantia em reais equivale a " << result << "GBP" << endl;
+    result = 0;
+}
