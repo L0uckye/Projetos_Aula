@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    /*Escreva um programa em C++ que solicite ao usuário três notas inteiras, calcule a média aritmética, 
+    e verifique se a média é menor que 5, entre 5 e 7 ou maior que 7. Se for maior que 7, exiba "Aprovado",
+    se estiver entre 5 e 7 exiba “de AF” e se estiver abaixo de 5 exiba "Reprovado".*/
+    int notaA, notaB, notaC;
+    int result, Qprovas=0;
+
+    cout <<"Insira as notas do aluno\n";
+    cout <<"Primeira nota:";
+    cin >> notaA;
+    result = notaA;
+    ++Qprovas;
+    cout <<"Segunda nota:";
+    cin >> notaB;
+    result = result + notaB;
+    ++Qprovas;
+    cout <<"Terceira nota:";
+    cin >> notaC;
+    result = result + notaC;
+    ++Qprovas;
+
+    result = result/Qprovas;
+    if(result<5){
+        cout <<"Aluno reprovado";
+    }if(result>=5&&result<7){
+        cout <<"Aluno de AF";
+    }if(result>=7){
+        cout <<"Aluno aprovado";
+    }
+    return 0;
+}
